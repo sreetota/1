@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Packages</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .heading {
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 2.5em;
+            color: #333;
+        }
+
+        .packages {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .package {
+            background-color: white;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin: 10px;
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .package-image {
+            width: 100%;
+            height: auto;
+            border-radius: 5px;
+        }
+
+        .package-name {
+            font-size: 1.5em;
+            margin: 10px 0;
+        }
+
+        .package-address,
+        .package-rate {
+            color: #666;
+        }
+
+        .book-now {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 15px;
+            cursor: pointer;
+        }
+
+        .book-now:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="heading">Packages</h1>
+        <div class="packages">
+            <div class="package">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/e/e6/Paris_Night.jpg" alt="Paris" class="package-image">
+                <h2 class="package-name">Paris</h2>
+                <p class="package-address">Address: 123 Paris St, France</p>
+                <p class="package-rate">Rate: $200</p>
+                <button class="book-now" onclick="bookNow('Paris')">Book Now</button>
+            </div>
+            <div class="package">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/New_York_City_Skyline_2016.jpg" alt="New York" class="package-image">
+                <h2 class="package-name">New York</h2>
+                <p class="package-address">Address: 456 New York Ave, USA</p>
+                <p class="package-rate">Rate: $250</p>
+                <button class="book-now" onclick="bookNow('New York')">Book Now</button>
+            </div>
+            <div class="package">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Tokyo_Tower_%28Tokyo%2C_Japan%29.jpg" alt="Tokyo" class="package-image">
+                <h2 class="package-name">Tokyo</h2>
+                <p class="package-address">Address: 789 Tokyo Rd, Japan</p>
+                <p class="package-rate">Rate: $300</p>
+                <button class="book-now" onclick="bookNow('Tokyo')">Book Now</button>
+            </div>
+            <!-- Add more packages as needed -->
+        </div>
+    </div>
+    <script>
+        function bookNow(packageName) {
+            alert("You have booked the package to " + packageName + "!");
+        }
+    </script>
+</body>
+</html>
